@@ -1,0 +1,14 @@
+{
+  "name": "security-guardian",
+  "version": "0.1.0",
+  "description": "Background guard for Windows: quarantines malware-style files/folders/processes and scans npm installs before they run",
+  "license": "MIT",
+  "os": ["win32"],
+  "engines": { "node": ">=18" },
+  "bin": {
+    "guardian": "bin/guardian.js",
+    "npm-safe": "bin/npm-safe.js"
+  },
+  "files": ["bin", "src", "rules.json"],
+  "scripts": { "test": "node --test" }
+}

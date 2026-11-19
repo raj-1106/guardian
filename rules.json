@@ -1,0 +1,11 @@
+{
+  "checkIntervalSeconds": 10,
+  "allowedDotFolders": [".ssh",".git",".config",".vs",".vscode",".nuget",".gradle",".m2",".azure",".aws",".kube",".guardian",".gemini",".cargo",".rustup",".wasmtime",".near",".npm",".nvm",".cache",".docker",".local",".claude",".claude-mem",".cursor",".antigravity",".android",".dotnet",".templateengine",".thumbnails"],
+  "suspiciousFolderPatterns": ["^\\.vs_cache$", "^\\.npm_cache_[a-z0-9]+$", "^\\.node_[a-z0-9]{6,}$", "^\\.[a-z]{2,8}_cache$", "^\\.npm_data$"],
+  "suspiciousFilePatterns": ["^abe_payload", "_inj_.*\\.dll$", "^loader\\.log$", "\\.(vbs|vbe)$"],
+  "ignoredPathParts": ["\\node_modules\\", "\\.git\\", "\\.guardian\\", "\\AppData\\Local\\Microsoft\\", "\\AppData\\Local\\Google\\", "\\AppData\\Local\\Packages\\", "\\AppData\\Local\\Programs\\", "\\AppData\\Roaming\\Code\\", "\\.claude\\", "\\.vscode\\"],
+  "installScripts": ["preinstall", "install", "postinstall", "prepare"],
+  "suspiciousScriptKeywords": ["child_process", "powershell", "Invoke-Expression", "DownloadString", "Start-Process", "CreateObject", "WScript.Shell", "curl", "wget", "net.connect", "dpapi", "mnemonic", "privateKey", "getPassword", "eval", "base64"],
+  "knownMaliciousPackages": ["soket.io", "axois", "axxios", "better-sqllite3", "koff1", "token-grabber", "discord-token-grabber", "node-keylogger", "win-keylogger"],
+  "riskyDependencyPatterns": { "dpapi": "dpapi", "sqlite": "sqlite", "koffi": "^koffi$", "socketio": "socket\\.io" }
+}
